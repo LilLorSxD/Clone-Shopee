@@ -1,0 +1,17 @@
+@media (max-width:1024px){
+    .select-input{
+        display: none;
+    }
+}
+
+
+.grid_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+}
+
+.grid_col-2-4{
+    padding: 0 5px;
+    width: 20%;
+}
