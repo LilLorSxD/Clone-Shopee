@@ -726,16 +726,22 @@
 
 /* Home Product */
 .container__product-card.col{
-    /* padding: 0; */
 }
 
 .container__product-items{
     position: relative;
     background-color: var(--white-color);
     margin-top: 10px;
-    /* margin: 10px 12px 0 12px; */
-    box-shadow: 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.01);
     border-radius: 4px;
+    transition: transform linear;
+    will-change: transform;
+}
+
+.container__product-items:hover{
+    cursor: pointer;
+    transform: translateY(1px);
+    box-shadow: 4px 3px 20px rgba(0, 0, 0, 0.05);
 }
 
 .containter__product-items-img{
@@ -743,6 +749,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
 }
 
 .container__product-form{
@@ -792,14 +800,38 @@
     background-color: var(--primary-color);
     color: var(--white-color);
     font-size: 1.2rem;
-    padding: 2px 4px;
+    padding: 1.5px 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 .container__product-sale-off{
     position: absolute;
     top:0;
     right:0;
-    
+    background-color: #F8CF2F;
+    padding: 3px 2.5px 4px;
+    text-align: center;
+    line-height: 13px;
+    border-top-right-radius: 4px;
+}
+
+.container__product-sale-off::before{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    border-top: 5px solid #F8CF2F;
+    border-right: 18px solid transparent;
+}
+
+.container__product-sale-off::after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    border-top: 5px solid #F8CF2F;
+    border-left: 18px solid transparent;
 }
 
 .container__product-sale-off__percent{
@@ -809,5 +841,5 @@
 
 .container__product-sale-off__label{
     font-size: 1.2rem;
-    color: var(--primary-color);
+    color: var(--white-color);
 }
