@@ -797,5 +797,17 @@
 
 .container__product-sale-off{
     position: absolute;
-    top:100%;
+    top:0;
+    right:0;
+    
+}
+
+.container__product-sale-off__percent{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.container__product-sale-off__label{
+    font-size: 1.2rem;
+    color: var(--primary-color);
 }
