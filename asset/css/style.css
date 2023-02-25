@@ -502,6 +502,7 @@
     will-change: opacity, transform;
     display: none;
     box-shadow: 1px 1px 5px #c8c8c8;
+    z-index: 1;
 }
 
 .header__cart-items-noti::before{
