@@ -142,3 +142,35 @@ li{
     position: relative;
     top: 1px;
 }
+
+/* Pagination */
+
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-items{
+    margin: 0 15px;
+}
+
+.pagination-items__link{
+    --height: 30px;
+    display: block;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.4);
+    height: var(--height);
+    min-width: 40px;
+    text-align: center;
+    line-height: var(--height);
+}
+
+.pagination-items--active .pagination-items__link{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 2px;
+}
+
+.pagination-items__link-icon{
+
+}
