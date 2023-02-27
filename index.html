@@ -18,7 +18,7 @@
     <div class="app">
         <header class="header">
             <div class="grid wide">
-                <nav class="header__navbar">
+                <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
                         <!-- <li class="header__navbar-items">
                             <a href="" class="header__navbar-items-link header__navbar-items--separate">Kênh người bán</a>
@@ -95,6 +95,40 @@
                 </nav>
                 <!-- Header with search -->
                 <div class="header-with-search">
+                    <nav class="header__navbar-mobile">
+                        <label for="nav_input-btn" class="nav__mobile-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+            
+                        <input type="checkbox" hidden class="nav-input" id="nav_input-btn">
+            
+                        <label for="nav_input-btn" class="nav__overplay">
+                        </label>
+            
+                        <nav class="nav__mobile">
+                            <h3 class="nav__mobile-heading">Tất cả sản phẩm</h3>
+                            <ul class="nav__mobile-list">
+                                <li class="nav__mobile-items">
+                                    <a href="" class="nav__mobile-link">ỐP LƯNG</a>
+                                </li>
+                                <li class="nav__mobile-items">
+                                    <a href="" class="nav__mobile-link">CƯỜNG LỰC</a>
+                                </li>
+                                <li class="nav__mobile-items">
+                                    <a href="" class="nav__mobile-link">CÁP SẠC</a>
+                                </li>
+                                <li class="nav__mobile-items">
+                                    <a href="" class="nav__mobile-link">ADAPTER SẠC</a>
+                                </li>
+                                <li class="nav__mobile-items">
+                                    <a href="" class="nav__mobile-link">MÓC KHÓA</a>
+                                </li>
+                            </ul>
+                            <!-- <label for="nav_input-btn" class="nav__mobile-btn-close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </label> -->
+                        </nav>
+                    </nav>
                     <div class="header__logo">
                         <a href="#" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
@@ -126,6 +160,26 @@
                     </div>
                 </div>
             </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-items header__sort-items--active">
+                    <a href="#" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-items">
+                    <a href="#" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-items">
+                    <a href="#" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-items">
+                    <a href="#" class="header__sort-link">
+                        Giá
+                        <div class="header__sort-link-icon">
+                            <i class="fa-solid fa-angle-up"></i>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </header>
 
         <div class="container">
@@ -133,7 +187,7 @@
                 <div class="container__product row">
 
                     <!-- Category -->
-                    <div class="container__product-section col l-2 m-0 c-0">
+                    <div class="container__product-section col l-2 m-3 c-0">
                         <div class="container__product-category">
                             <h3 class="container__product-category-heading">
                                 <i class="container__product-category-icon fa-solid fa-list"></i>
@@ -153,7 +207,7 @@
                         </div>
                     </div>
 
-                    <div class="container__product-section col l-10 m-12 c-12">
+                    <div class="container__product-section col l-10 m-9 c-12">
 
                         <!-- Sort Bar -->
                         <div class="container__product-sort-bar">
@@ -192,7 +246,7 @@
                         <!-- Home Product -->
                         <div class="container__product-result-view row">
                             
-                            <div class="container__product-card col l-2-4 m-3 c-4">
+                            <div class="container__product-card col l-2-4 m-4 c-4">
                                 <div class="container__product-items">
                                     <div class="containter__product-items-img" style="background-image: url(./asset/img/card_items.jpg);"></div>
                                     <div class="container__product-form">
@@ -227,7 +281,7 @@
                                 </div>
                             </div>
 
-                            <div class="container__product-card col l-2-4 m-3 c-4">
+                            <div class="container__product-card col l-2-4 m-4 c-4">
                                 <div class="container__product-items">
                                     <div class="containter__product-items-img" style="background-image: url(./asset/img/card_items_1.jpg);"></div>
                                     <div class="container__product-form">
@@ -256,7 +310,7 @@
                             </div>
 
 
-                            <div class="container__product-card col l-2-4 m-3 c-4">
+                            <div class="container__product-card col l-2-4 m-4 c-4">
                                 <div class="container__product-items">
                                     <div class="containter__product-items-img" style="background-image: url(./asset/img/card_items_2.jpg);"></div>
                                     <div class="container__product-form">
@@ -285,7 +339,7 @@
                             </div>
 
 
-                            <div class="container__product-card col l-2-4 m-3 c-4">
+                            <div class="container__product-card col l-2-4 m-4 c-4">
                                 <div class="container__product-items">
                                     <div class="containter__product-items-img" style="background-image: url(./asset/img/card_items_3.jpg);"></div>
                                     <div class="container__product-form">
@@ -313,7 +367,7 @@
                                 </div>
                             </div>
 
-                            <div class="container__product-card col l-2-4 m-3 c-4">
+                            <div class="container__product-card col l-2-4 m-4 c-4">
                                 <div class="container__product-items">
                                     <div class="containter__product-items-img" style="background-image: url(./asset/img/card_items_4.jpg);"></div>
                                     <div class="container__product-form">
@@ -341,9 +395,317 @@
                                 </div>
                             </div>
 
-                            <div class="container__product-card col l-2-4 m-3 c-4">
+                            <div class="container__product-card col l-2-4 m-4 c-4">
                                 <div class="container__product-items">
                                     <div class="containter__product-items-img" style="background-image: url(./asset/img/card_items.jpg);"></div>
+                                    <div class="container__product-form">
+                                        <div class="container__product-form-name">
+                                            Ốp Điện Thoại Dẻo Họa Tiết Mona Lisa Cho iPhone 14 / 13 / 12 Pro MAX / 13Pro / 12Pro / 12 / X / XS / XR / XS MAX / 11 / 11 Pro MAX
+                                        </div>
+                                        <div class="container__product-form-price">₫53.720</div>
+                                        <div class="container__product-form-rating">
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid fa-star"></i>
+                                            <div class="container__product-form-sold">Đã bán 132</div>
+                                        </div>
+                                    </div>
+                                    <div class="container__product-favorite">
+                                        <i class="container__product-favorite-icon fa-solid fa-check"></i>
+                                        Yêu thích
+                                    </div>
+                                    <div class="container__product-sale-off">
+                                        <div class="container__product-sale-off__percent">46%</div>
+                                        <div class="container__product-sale-off__label">GIẢM</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container__product-card col l-2-4 m-4 c-4">
+                                <div class="container__product-items">
+                                    <div class="containter__product-items-img" style="background-image: url(./asset/img/card_items.jpg);"></div>
+                                    <div class="container__product-form">
+                                        <div class="container__product-form-name">
+                                            Ốp Điện Thoại Dẻo Họa Tiết Mona Lisa Cho iPhone 14 / 13 / 12 Pro MAX / 13Pro / 12Pro / 12 / X / XS / XR / XS MAX / 11 / 11 Pro MAX
+                                        </div>
+                                        <div class="container__product-form-price">₫53.720</div>
+                                        <div class="container__product-form-rating">
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid fa-star"></i>
+                                            <div class="container__product-form-sold">Đã bán 132</div>
+                                        </div>
+                                    </div>
+                                    <div class="container__product-favorite">
+                                        <i class="container__product-favorite-icon fa-solid fa-check"></i>
+                                        Yêu thích
+                                    </div>
+                                    <div class="container__product-sale-off">
+                                        <div class="container__product-sale-off__percent">46%</div>
+                                        <div class="container__product-sale-off__label">GIẢM</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container__product-card col l-2-4 m-4 c-4">
+                                <div class="container__product-items">
+                                    <div class="containter__product-items-img" style="background-image: url(./asset/img/card_items.jpg);"></div>
+                                    <div class="container__product-form">
+                                        <div class="container__product-form-name">
+                                            Ốp Điện Thoại Dẻo Họa Tiết Mona Lisa Cho iPhone 14 / 13 / 12 Pro MAX / 13Pro / 12Pro / 12 / X / XS / XR / XS MAX / 11 / 11 Pro MAX
+                                        </div>
+                                        <div class="container__product-form-price">₫53.720</div>
+                                        <div class="container__product-form-rating">
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid fa-star"></i>
+                                            <div class="container__product-form-sold">Đã bán 132</div>
+                                        </div>
+                                    </div>
+                                    <div class="container__product-favorite">
+                                        <i class="container__product-favorite-icon fa-solid fa-check"></i>
+                                        Yêu thích
+                                    </div>
+                                    <div class="container__product-sale-off">
+                                        <div class="container__product-sale-off__percent">46%</div>
+                                        <div class="container__product-sale-off__label">GIẢM</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container__product-card col l-2-4 m-4 c-4">
+                                <div class="container__product-items">
+                                    <div class="containter__product-items-img" style="background-image: url(./asset/img/card_items.jpg);"></div>
+                                    <div class="container__product-form">
+                                        <div class="container__product-form-name">
+                                            Ốp Điện Thoại Dẻo Họa Tiết Mona Lisa Cho iPhone 14 / 13 / 12 Pro MAX / 13Pro / 12Pro / 12 / X / XS / XR / XS MAX / 11 / 11 Pro MAX
+                                        </div>
+                                        <div class="container__product-form-price">₫53.720</div>
+                                        <div class="container__product-form-rating">
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid fa-star"></i>
+                                            <div class="container__product-form-sold">Đã bán 132</div>
+                                        </div>
+                                    </div>
+                                    <div class="container__product-favorite">
+                                        <i class="container__product-favorite-icon fa-solid fa-check"></i>
+                                        Yêu thích
+                                    </div>
+                                    <div class="container__product-sale-off">
+                                        <div class="container__product-sale-off__percent">46%</div>
+                                        <div class="container__product-sale-off__label">GIẢM</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container__product-card col l-2-4 m-4 c-4">
+                                <div class="container__product-items">
+                                    <div class="containter__product-items-img" style="background-image: url(./asset/img/card_items.jpg);"></div>
+                                    <div class="container__product-form">
+                                        <div class="container__product-form-name">
+                                            Ốp Điện Thoại Dẻo Họa Tiết Mona Lisa Cho iPhone 14 / 13 / 12 Pro MAX / 13Pro / 12Pro / 12 / X / XS / XR / XS MAX / 11 / 11 Pro MAX
+                                        </div>
+                                        <div class="container__product-form-price">₫53.720</div>
+                                        <div class="container__product-form-rating">
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid fa-star"></i>
+                                            <div class="container__product-form-sold">Đã bán 132</div>
+                                        </div>
+                                    </div>
+                                    <div class="container__product-favorite">
+                                        <i class="container__product-favorite-icon fa-solid fa-check"></i>
+                                        Yêu thích
+                                    </div>
+                                    <div class="container__product-sale-off">
+                                        <div class="container__product-sale-off__percent">46%</div>
+                                        <div class="container__product-sale-off__label">GIẢM</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container__product-card col l-2-4 m-4 c-4">
+                                <div class="container__product-items">
+                                    <div class="containter__product-items-img" style="background-image: url(./asset/img/card_items.jpg);"></div>
+                                    <div class="container__product-form">
+                                        <div class="container__product-form-name">
+                                            Ốp Điện Thoại Dẻo Họa Tiết Mona Lisa Cho iPhone 14 / 13 / 12 Pro MAX / 13Pro / 12Pro / 12 / X / XS / XR / XS MAX / 11 / 11 Pro MAX
+                                        </div>
+                                        <div class="container__product-form-price">₫53.720</div>
+                                        <div class="container__product-form-rating">
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid fa-star"></i>
+                                            <div class="container__product-form-sold">Đã bán 132</div>
+                                        </div>
+                                    </div>
+                                    <div class="container__product-favorite">
+                                        <i class="container__product-favorite-icon fa-solid fa-check"></i>
+                                        Yêu thích
+                                    </div>
+                                    <div class="container__product-sale-off">
+                                        <div class="container__product-sale-off__percent">46%</div>
+                                        <div class="container__product-sale-off__label">GIẢM</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container__product-card col l-2-4 m-4 c-4">
+                                <div class="container__product-items">
+                                    <div class="containter__product-items-img" style="background-image: url(./asset/img/card_items.jpg);"></div>
+                                    <div class="container__product-form">
+                                        <div class="container__product-form-name">
+                                            Ốp Điện Thoại Dẻo Họa Tiết Mona Lisa Cho iPhone 14 / 13 / 12 Pro MAX / 13Pro / 12Pro / 12 / X / XS / XR / XS MAX / 11 / 11 Pro MAX
+                                        </div>
+                                        <div class="container__product-form-price">₫53.720</div>
+                                        <div class="container__product-form-rating">
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid fa-star"></i>
+                                            <div class="container__product-form-sold">Đã bán 132</div>
+                                        </div>
+                                    </div>
+                                    <div class="container__product-favorite">
+                                        <i class="container__product-favorite-icon fa-solid fa-check"></i>
+                                        Yêu thích
+                                    </div>
+                                    <div class="container__product-sale-off">
+                                        <div class="container__product-sale-off__percent">46%</div>
+                                        <div class="container__product-sale-off__label">GIẢM</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container__product-card col l-2-4 m-4 c-4">
+                                <div class="container__product-items">
+                                    <div class="containter__product-items-img" style="background-image: url(./asset/img/card_items.jpg);"></div>
+                                    <div class="container__product-form">
+                                        <div class="container__product-form-name">
+                                            Ốp Điện Thoại Dẻo Họa Tiết Mona Lisa Cho iPhone 14 / 13 / 12 Pro MAX / 13Pro / 12Pro / 12 / X / XS / XR / XS MAX / 11 / 11 Pro MAX
+                                        </div>
+                                        <div class="container__product-form-price">₫53.720</div>
+                                        <div class="container__product-form-rating">
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid fa-star"></i>
+                                            <div class="container__product-form-sold">Đã bán 132</div>
+                                        </div>
+                                    </div>
+                                    <div class="container__product-favorite">
+                                        <i class="container__product-favorite-icon fa-solid fa-check"></i>
+                                        Yêu thích
+                                    </div>
+                                    <div class="container__product-sale-off">
+                                        <div class="container__product-sale-off__percent">46%</div>
+                                        <div class="container__product-sale-off__label">GIẢM</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container__product-card col l-2-4 m-4 c-4">
+                                <div class="container__product-items">
+                                    <div class="containter__product-items-img" style="background-image: url(./asset/img/card_items.jpg);"></div>
+                                    <div class="container__product-form">
+                                        <div class="container__product-form-name">
+                                            Ốp Điện Thoại Dẻo Họa Tiết Mona Lisa Cho iPhone 14 / 13 / 12 Pro MAX / 13Pro / 12Pro / 12 / X / XS / XR / XS MAX / 11 / 11 Pro MAX
+                                        </div>
+                                        <div class="container__product-form-price">₫53.720</div>
+                                        <div class="container__product-form-rating">
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid fa-star"></i>
+                                            <div class="container__product-form-sold">Đã bán 132</div>
+                                        </div>
+                                    </div>
+                                    <div class="container__product-favorite">
+                                        <i class="container__product-favorite-icon fa-solid fa-check"></i>
+                                        Yêu thích
+                                    </div>
+                                    <div class="container__product-sale-off">
+                                        <div class="container__product-sale-off__percent">46%</div>
+                                        <div class="container__product-sale-off__label">GIẢM</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container__product-card col l-2-4 m-4 c-4">
+                                <div class="container__product-items">
+                                    <div class="containter__product-items-img" style="background-image: url(./asset/img/card_items_3.jpg);"></div>
+                                    <div class="container__product-form">
+                                        <div class="container__product-form-name">
+                                            Ốp Điện Thoại Dẻo Họa Tiết Mona Lisa Cho iPhone 14 / 13 / 12 Pro MAX / 13Pro / 12Pro / 12 / X / XS / XR / XS MAX / 11 / 11 Pro MAX
+                                        </div>
+                                        <div class="container__product-form-price">₫53.720</div>
+                                        <div class="container__product-form-rating">
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid fa-star"></i>
+                                            <div class="container__product-form-sold">Đã bán 132</div>
+                                        </div>
+                                    </div>
+                                    <div class="container__product-favorite">
+                                        <i class="container__product-favorite-icon fa-solid fa-check"></i>
+                                        Yêu thích
+                                    </div>
+                                    <div class="container__product-sale-off">
+                                        <div class="container__product-sale-off__percent">46%</div>
+                                        <div class="container__product-sale-off__label">GIẢM</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container__product-card col l-2-4 m-4 c-4">
+                                <div class="container__product-items">
+                                    <div class="containter__product-items-img" style="background-image: url(./asset/img/card_items_4.jpg);"></div>
+                                    <div class="container__product-form">
+                                        <div class="container__product-form-name">
+                                            Ốp Điện Thoại Dẻo Họa Tiết Mona Lisa Cho iPhone 14 / 13 / 12 Pro MAX / 13Pro / 12Pro / 12 / X / XS / XR / XS MAX / 11 / 11 Pro MAX
+                                        </div>
+                                        <div class="container__product-form-price">₫53.720</div>
+                                        <div class="container__product-form-rating">
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid container__product-form-rating-icon--gold fa-star"></i>
+                                            <i class="container__product-form-rating-icon fa-solid fa-star"></i>
+                                            <div class="container__product-form-sold">Đã bán 132</div>
+                                        </div>
+                                    </div>
+                                    <div class="container__product-favorite">
+                                        <i class="container__product-favorite-icon fa-solid fa-check"></i>
+                                        Yêu thích
+                                    </div>
+                                    <div class="container__product-sale-off">
+                                        <div class="container__product-sale-off__percent">46%</div>
+                                        <div class="container__product-sale-off__label">GIẢM</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container__product-card col l-2-4 m-4 c-4">
+                                <div class="container__product-items">
+                                    <div class="containter__product-items-img" style="background-image: url(./asset/img/card_items_1.jpg);"></div>
                                     <div class="container__product-form">
                                         <div class="container__product-form-name">
                                             Ốp Điện Thoại Dẻo Họa Tiết Mona Lisa Cho iPhone 14 / 13 / 12 Pro MAX / 13Pro / 12Pro / 12 / X / XS / XR / XS MAX / 11 / 11 Pro MAX
@@ -372,7 +734,7 @@
                         </div>
 
                         <!-- Pagination -->
-                        <ul class="pagination container__product-section__pagination">
+                        <ul class="pagination container__product-section__pagination hide-on-mobile-tablet">
                             <li class="pagination-items">
                                 <a href="" class="pagination-items__link">
                                     <i class="pagination-items__link-icon fa-solid fa-angle-left"></i>
@@ -414,7 +776,7 @@
         <footer class="footer">
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-2-4">
+                    <div class="col l-2-4 m-0-4 m-4 c-o-1 c-6">
                         <h3 class="footer__heading">CHĂM SÓC KHÁCH HÀNG</h3>
                         <ul class="footer__list">
                             <li class="footer__list-items">
@@ -485,7 +847,7 @@
                         </ul>    
                     </div>
 
-                    <div class="col l-2-4">
+                    <div class="col l-2-4 m-0-4 m-4 c-o-1 c-6">
                         <h3 class="footer__heading">VỀ SHOPEE</h3>    
                         <ul class="footer__list">
                             <li class="footer__list-items">
@@ -544,7 +906,7 @@
                         </ul>    
                     </div>
 
-                    <div class="col l-2-4">
+                    <div class="col l-2-4 m-0-4 m-4 c-o-1 c-6">
                         <h3 class="footer__heading">THANH TOÁN</h3>
                         <div class="row">
                             <div class="col l-4">
@@ -597,7 +959,7 @@
                         </div>
                     </div>
 
-                    <div class="col l-2-4">
+                    <div class="col l-2-4 m-0-4 m-4 c-o-1 c-6">
                         <h3 class="footer__heading">THEO DÕI CHÚNG TÔI</h3> 
                         <ul class="footer__list">
                             <li class="footer__list-items-social">
@@ -623,7 +985,7 @@
                         </ul>
                     </div>
 
-                    <div class="col l-2-4">
+                    <div class="col l-2-4 m-0-4 m-4 c-o-1 c-6">
                         <h3 class="footer__heading">TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h3>
                         <div class="footer__download">
                             <img src="./asset/img/qr_shopee.png" alt="" class="footer__download-qr">
